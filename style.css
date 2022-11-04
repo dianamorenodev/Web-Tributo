@@ -12,7 +12,7 @@
 }
 
 body {
-  background-color: #65f029;
+  background-color: #F06529;
 }
 
 header {
@@ -57,6 +57,7 @@ li {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+
 }
 
 .bannerItem {
@@ -65,6 +66,7 @@ li {
 
 #banerImg {
   width: 300px;
+  border-radius: 30px;
 }
 
 #suVida {
@@ -83,7 +85,7 @@ li {
 
 #img-su-vida {
   width: 300px;
-  border-radius: 30pt;
+  border-radius: 30px;
 }
 
 #art1 {
@@ -153,4 +155,73 @@ footer {
   background-color: #191717;
   padding: 1rem;
   text-align: center;
+}
+
+.rotate-diagonal-right:hover {
+  animation: rotate-diagonal-right 0.9s;
+}
+
+@keyframes rotate-diagonal-right {
+  0% {
+    transform: rotate3d(1, 1, 0, 0deg)
+  }
+
+  50% {
+    transform: rotate3d(1, 1, 0, -180deg)
+  }
+
+  100% {
+    transform: rotate3d(1, 1, 0, -360deg)
+  }
+}
+
+.tracking-in-expand-forward-top:hover {
+  animation: tracking-in-expand-forward-top 3s linear both
+}
+
+@keyframes tracking-in-expand-forward-top {
+  0% {
+    letter-spacing: -.2em;
+    transform: translateZ(-700px) translateY(-100px);
+    opacity: 0
+  }
+
+  40% {
+    opacity: .6
+  }
+
+  100% {
+    transform: translateZ(0) translateY(0);
+    opacity: 1
+  }
+}
+
+.vibrate:hover {
+  animation: vibrate 1.5s linear both
+}
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0)
+  }
+
+  20% {
+    transform: translate(-2px, 2px)
+  }
+
+  40% {
+    transform: translate(-2px, -2px)
+  }
+
+  60% {
+    transform: translate(2px, 2px)
+  }
+
+  80% {
+    transform: translate(2px, -2px)
+  }
+
+  100% {
+    transform: translate(0)
+  }
 }

@@ -78,7 +78,7 @@ li {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 5rem;
+  padding: 0.5rem;
   flex-wrap: wrap;
   justify-content: space-around;
 }
@@ -90,9 +90,9 @@ li {
 
 #art1 {
   width: 350px;
-  padding: 3rem;
+  margin: 05rem;
   border-left: #F06529 40px solid;
-  padding-left: 2rem;
+  padding-left: 1rem;
   font-size: 1em;
 }
 
@@ -100,15 +100,15 @@ li {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 5rem;
+  padding: 0.5rem;
 }
 
 #art2 {
-  padding: 1rem;
+  margin: 0.5rem;
   width: 600px;
   text-align: center;
   font-size: large;
-  padding-right: 4rem;
+  padding-right: 1rem;
   border-right: 40px solid #2955F0;
 }
 
@@ -124,7 +124,7 @@ li {
 }
 
 #tra1 img {
-  width: 350px;
+  width: 60%;
 }
 
 .tra1-item {
@@ -143,7 +143,7 @@ li {
 }
 
 #tra2 img {
-  width: 350px;
+  width: 60%;
 }
 
 #tra2 p {
